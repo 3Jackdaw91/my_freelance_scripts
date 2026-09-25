@@ -61,15 +61,16 @@
 
 ### Быстрый запуск скриптов
 
-**1. Базовая настройка сервера (Ubuntu Light Setup)**
-
 ```bash
+Настройка
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_ubuntu_light.sh -o setup.sh
 chmod +x setup.sh
 sudo ./setup.sh
 
+Fail2ban
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_fail2ban.sh | sudo bash
 
+Аудит
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/audit_server.sh -o audit.sh
 chmod +x audit.sh
 sudo ./audit.sh
