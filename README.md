@@ -15,19 +15,6 @@
 
 Скрипт написан с акцентом на безопасность: новый порт открывается в фаерволе **до** перезапуска SSH, чтобы не потерять доступ к серверу.
 
----
-
-### Быстрый запуск (рекомендуется)
-
-Выполните на свежем сервере от пользователя `root`:
-
-```bash
-curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_ubuntu_light.sh | bash
-
-curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_ubuntu_light.sh -o setup.sh
-chmod +x setup.sh
-sudo ./setup.sh
-
 # Fail2Ban Setup Script
 
 Скрипт для быстрой установки и настройки Fail2Ban на Ubuntu 24.04 с рекомендуемыми параметрами безопасности.
@@ -49,6 +36,18 @@ sudo ./setup.sh
 | `bantime`             | 1h       | Время бана                            |
 | `bantime.increment`   | true     | Увеличение времени бана при повторах  |
 | `bantime.maxtime`     | 1w       | Максимальное время бана               |
+---
+
+### Быстрый запуск (рекомендуется)
+
+Выполните на свежем сервере от пользователя `root`:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_ubuntu_light.sh | bash
+
+curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_ubuntu_light.sh -o setup.sh
+chmod +x setup.sh
+sudo ./setup.sh
 
 ### Быстрый запуск
 
