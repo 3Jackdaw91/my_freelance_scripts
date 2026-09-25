@@ -45,10 +45,8 @@
 ```bash
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_ubuntu_light.sh | bash
 
-```bash
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_ubuntu_light.sh -o setup.sh
 chmod +x setup.sh
 sudo ./setup.sh
 
-```bash
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_fail2ban.sh | sudo bash
