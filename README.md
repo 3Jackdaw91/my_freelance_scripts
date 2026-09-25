@@ -28,11 +28,11 @@ curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main
 chmod +x setup.sh
 sudo ./setup.sh
 =====================================================================================
-# Fail2Ban Setup Script
+ Fail2Ban Setup Script
 
 Скрипт для быстрой установки и настройки Fail2Ban на Ubuntu 24.04 с рекомендуемыми параметрами безопасности.
 
-### Что делает скрипт
+ Что делает скрипт
 
 - Устанавливает Fail2Ban
 - Настраивает защиту SSH с оптимальными параметрами
@@ -40,7 +40,7 @@ sudo ./setup.sh
 - Включает защиту от повторных нарушителей (`recidive`)
 - По умолчанию разрешает доступ со всех IP (белый список можно добавить позже)
 
-### Параметры по умолчанию
+ Параметры по умолчанию
 
 | Параметр       | Значение | Описание                              |
 |----------------|----------|---------------------------------------|
@@ -50,7 +50,7 @@ sudo ./setup.sh
 | `bantime.increment` | true | Увеличение времени бана при повторах |
 | `bantime.maxtime`   | 1w  | Максимальное время бана               |
 
-### Быстрый запуск
+ Быстрый запуск
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_fail2ban.sh | sudo bash
