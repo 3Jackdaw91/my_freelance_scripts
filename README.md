@@ -38,6 +38,27 @@
 | `bantime.maxtime`     | 1w       | Максимальное время бана               |
 ---
 
+## Server Audit Script
+
+Скрипт комплексного аудита безопасности сервера Ubuntu.
+
+### Что проверяет
+
+- Информация о системе (ОС, ядро, аптайм)
+- Открытые порты (внешние и localhost)
+- Запущенные службы
+- Пользователи (обычные, sudo, UID 0)
+- Конфигурация SSH (порт, root-login, password/pubkey auth)
+- Статус фаервола UFW
+- Статус Fail2Ban
+- Права доступа к критическим файлам (`/etc/passwd`, `/etc/shadow`, `sshd_config`, `sudoers` и др.)
+- Права на директории `~/.ssh`
+- Состояние обновлений системы и `unattended-upgrades`
+- World-writable файлы в системных директориях
+- Пользователи с пустым паролем
+
+В конце скрипт выдаёт структурированный список рекомендаций на основе найденных проблем.
+
 ### Быстрый запуск (рекомендуется)
 
 Выполните на свежем сервере от пользователя `root`:
@@ -50,3 +71,7 @@ chmod +x setup.sh
 sudo ./setup.sh
 
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_fail2ban.sh | sudo bash
+
+curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/audit_server.sh -o audit.sh
+chmod +x audit.sh
+sudo ./audit.sh
