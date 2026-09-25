@@ -52,5 +52,5 @@ sudo ./setup.sh
 
  Быстрый запуск
 
-```bash
+bash
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_fail2ban.sh | sudo bash
