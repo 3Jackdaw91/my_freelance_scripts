@@ -59,13 +59,11 @@
 
 В конце скрипт выдаёт структурированный список рекомендаций на основе найденных проблем.
 
-### Быстрый запуск (рекомендуется)
+### Быстрый запуск скриптов
 
-Выполните на свежем сервере от пользователя `root`:
+**1. Базовая настройка сервера (Ubuntu Light Setup)**
 
-
-curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_ubuntu_light.sh | bash
-
+```bash
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_ubuntu_light.sh -o setup.sh
 chmod +x setup.sh
 sudo ./setup.sh
