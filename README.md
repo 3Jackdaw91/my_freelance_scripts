@@ -63,7 +63,7 @@
 
 Выполните на свежем сервере от пользователя `root`:
 
-```bash
+
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_ubuntu_light.sh | bash
 
 curl -sSL https://raw.githubusercontent.com/3Jackdaw91/my_freelance_scripts/main/setup_ubuntu_light.sh -o setup.sh
